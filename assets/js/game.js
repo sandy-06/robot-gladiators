@@ -1,3 +1,7 @@
-//this creates a 
+//this creates a function named "fight"
+function fight( {
+    window.alert("The fight has begun!");
+}
 
-window.alert("This is an alert! JavaScript is running!");
+
+
