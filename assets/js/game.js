@@ -38,12 +38,21 @@ var fight = function (enemyName) {
     }
   }
 
+  // remove enemy's health by subtracting the amount set in the playerAttack variable
+enemyHealth = enemyHealth - playerAttack;
+console.log(
+  playerName + ' attacked ' + enemyName + " . " + enemyName + ' now has ' + enemyHealth + ' health remaining.');
+
     // check enemy's health
     if (enemyHealth <= 0) {
       window.alert(enemyName + " has died!");
-    } else {
-      window.alert(enemyName + " still has " + enemyHealth + " health left.");
-    }
+    } 
+
+    //award player money for winning
+    playerMoney = playerMoney + 20;
+
+    // leave while() loop since enemy is dead
+    break;
 
     // remove players's health by subtracting the amount set in the enemyAttack variable
     playerHealth = playerHealth - enemyAttack;
